@@ -1,3 +1,125 @@
-p {
-  font-size : 20px;
+body {
+  font-size: 16px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* header */
+
+.inner {
+  display: flex;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 9;
+  
+}
+
+.inner .left {
+  height: 100px;
+  position: relative;
+}
+
+.inner .left .logo img {
+  width: 120px;
+  top: 28px;
+  bottom: 0;
+  left: 70px;
+  right: 0;
+  position: absolute;
+}
+
+.inner .left .menu_burger .material-symbols-outlined {
+  font-size: 30px;
+  top: 30px;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  position: absolute;
+  color: white;
+}
+
+.inner .right  {
+  background-color: aqua;
+  height: 100px;
+
+}
+
+.inner .right .topmenu {
+  display: flex;  
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.inner .right .topmenu .material-symbols-outlined {
+  font-size: 35px;
+  padding: 0 5px;
+  color: white;
+}
+
+/* body visual */
+
+.main_contents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.cover {
+  position: absolute;
+  width: 33.33%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.cover:hover {
+  background-color: rgb(0, 0, 0, 0);
+  transition: .3s;
+}
+
+.first {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  background: url(./images/winter.PNG);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+.second {
+  width: 33.33%;
+  float: left;
+  background-color: black;
+  background-image: url(./images/autumn.PNG);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.third {
+  width: 33.33%;
+  float: left;
+  background-image: url(./images/summer.PNG);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.first-title p {
+  font-size: 25px;
+  color: white;
+  
 }
